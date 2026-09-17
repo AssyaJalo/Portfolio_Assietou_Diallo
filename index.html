@@ -276,8 +276,73 @@
 </section>
 
 <section class="projet" id="projet">
+
     <div class="projet-info">
         <h1>Mes projets</h1>
+    </div>
+
+    <div class="projet-container">
+
+        <!-- Projet 1 -->
+        <div class="projet-card">
+
+            <div class="projet-image">
+                <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=800" alt="Projet de révision HTML et CSS">
+            </div>
+
+            <div class="projet-content">
+
+                <h2>Révision HTML & CSS</h2>
+
+                <p>
+                    Projet réalisé pour mettre en pratique les bases
+                    du HTML et du CSS à travers différentes activités.
+                </p>
+
+                <p class="technologies">
+                    HTML · CSS
+                </p>
+
+                <a href="https://site-web-meridian.vercel.app/" class="btn">
+                    Voir le projet
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Projet 2 -->
+        <div class="projet-card">
+
+            <div class="projet-image">
+                <img src="https://solvers.fr/wp-content/uploads/2019/08/Comment-construire-une-e%CC%81quipe-de-de%CC%81veloppement-de-logiciels-efficace-SOLVERS-Tunisie-Offshore.jpeg" alt="Projet réalisé avec Tailwind CSS">
+            </div>
+
+            <div class="projet-content">
+
+                <h2>Projet Tailwind CSS</h2>
+
+                <p>
+                    Projet réalisé avec Tailwind CSS afin de pratiquer
+                    la création d'interfaces modernes et responsives.
+                </p>
+
+                <p class="technologies">
+                    HTML · Tailwind CSS
+                </p>
+
+                <a href="https://tailwindcss-xarala.vercel.app/" class="btn">
+                    Voir le projet
+                </a>
+
+            </div>
+
+        </div>
+
+
+
+
     </div>
 
 </section>
@@ -296,9 +361,8 @@
 
     </div>
 
-
     <!-- Formulaire -->
-    <form class="contact-form">
+    <form class="contact-form" id="contactForm">
 
         <div class="input-field">
             <label for="nom">Nom</label>
@@ -310,6 +374,8 @@
                 placeholder="Votre nom"
                 required
             >
+
+            <small class="error" id="nomError"></small>
         </div>
 
 
@@ -323,6 +389,8 @@
                 placeholder="Votre email"
                 required
             >
+
+            <small class="error" id="emailError"></small>
         </div>
 
 
@@ -335,6 +403,8 @@
                 placeholder="Votre message"
                 required
             ></textarea>
+
+            <small class="error" id="messageError"></small>
         </div>
 
 
@@ -391,7 +461,7 @@
 
 
 
-
+<script src="./script.js"></script>
 
     
 </body>
